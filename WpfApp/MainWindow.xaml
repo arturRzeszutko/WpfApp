@@ -13,11 +13,8 @@
             <RowDefinition/>
         </Grid.RowDefinitions>
 
-        <Label FontSize="18" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="5"
-               Grid.Row="0" Content="CRUD Application using EntityFrameworkCore and SQLite"/>
-
         <DataGrid x:Name="ProductDG" AutoGenerateColumns="False" CanUserAddRows="False" IsReadOnly="True"
-                  Grid.Row="1" ColumnWidth="*" Margin="5" IsSynchronizedWithCurrentItem="True" >
+                  Grid.Row="1" ColumnWidth="*" Margin="5,5,5,48" IsSynchronizedWithCurrentItem="True" >
 
             <DataGrid.Columns>
                 <DataGridTextColumn Header="Product Id" Binding="{Binding Id}"/>
@@ -129,5 +126,7 @@
                 </StackPanel>
             </Border>
         </Grid>
+        <Button Grid.Row="1" Width="150" Content="Login" Margin="0,157,0,0" Click="GoToDifferentForm"
+            HorizontalAlignment="Center" VerticalAlignment="Top"/>
     </Grid>
 </Window>

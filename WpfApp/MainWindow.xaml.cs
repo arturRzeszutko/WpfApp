@@ -66,5 +66,12 @@ namespace WpfApp
             context.SaveChanges();
             GetProducts();
         }
+
+        private void GoToDifferentForm(object sender, RoutedEventArgs e)
+        {
+            Window1 window1 = new Window1();
+            window1.ShowDialog();
+
+        }
     }
 }
